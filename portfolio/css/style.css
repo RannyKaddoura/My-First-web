@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('../fonts/font-awesome/css/font-awesome.min.css');
-    {
+* {
     border: red 0.2px solid;
 }
 
@@ -72,8 +72,11 @@ a:active {
 
 img {
     display: inline-block;
-    width: 30%;
+    width: 75%;
 }
+
+
+
 
 
 /* -----     header ------ */
@@ -231,8 +234,10 @@ textarea {
     padding: 2px 0;
 
 }
+
 #awan {
-    color: rgba(209, 209, 224, 0.9);;
+    color: rgba(209, 209, 224, 0.9);
+    ;
     font-family: 'Indie Flower', cursive;
     border-color: rgba(209, 209, 224, 0.9);
 
@@ -244,28 +249,29 @@ textarea {
     text-align: center;
 }
 
-.icon {
+.icons {
     padding: 1px;
     width: 100%;
     height: auto;
     text-align: center;
 }
 
-.icon img:hover {
+.icons img:hover {
     box-shadow: 4px 4px 8px black, 0 0 50px gray, 0 0 10px lightblue;
-    width: 35%;
+    width: 80%;
+    transition: all 1s ease;
 }
 
-.icon a {
+.icons a {
     color: black;
     text-decoration: none;
 }
 
-.icon i {
+.icons i {
     font-size: 90px;
 }
 
-.icon h3,
+.icons h3,
 p {
     margin: 0;
 }
@@ -311,69 +317,158 @@ p {
 
 .anim.five {
     border-color: #86009B;
-    animation: rotation-rev 3s infinite linear; 
+    animation: rotation-rev 3s infinite linear;
 }
+/* ---------------------  new note gallary photzos ------------------ */
 
-/* -------------------  Project cloud CSS  ------------------- */
+
+h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+.ulticket,.liticket{
+  list-style:none;
+}
+.ulticket{
+  overflow:hidden;
+  padding:3em;
+}
+.ulticket .liticket .aticket{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:10em;
+  width:10em;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+.ulticket .liticket{
+  margin:1em;
+  float:left;
+}
+.ulticket .liticket h2{
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+.ulticket .liticket p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:180%;
+}
+.ulticket .liticket .aticket{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+.ulticket .liticket:nth-child(even) .aticket{
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+.ulticket .liticket:nth-child(3n) .aticket{
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+.ulticket .liticket:nth-child(5n) .aticket{
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+.ulticket .liticket .aticket:hover,.ulticket .liticket .aticket:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position:relative;
+  z-index:5;
+}
+ol{text-align:center;}
+ol .liticket{display:inline;padding-right:1em;}
+ol .liticket .aticket{color:#fff;}
+
+
+/* -------------------  footer cloud  ------------------- */
 
 #awan {
 
-top:0px;left:0px;
-width:100%;
-height:100%;
-text-align:center;
-margin:0px;
-padding:0px;
-background-color:#C0DEED;
-background: url(../images/bgdark.png) center top repeat-x;
-padding-top:100px;
-padding-bottom:10px;
-  width: 100%;
-  height: 135px;
-  animation: awan-animasi 10s linear infinite;
-  -ms-animation: awan-animasi 10s linear infinite;
-  -moz-animation: awan-animasi 10s linear infinite;
-  -webkit-animation: awan-animasi 10s linear infinite;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: #C0DEED;
+    background: url(../images/bgdark.png) center top repeat-x;
+    padding-top: 100px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 135px;
+    animation: awan-animasi 10s linear infinite;
+    -ms-animation: awan-animasi 10s linear infinite;
+    -moz-animation: awan-animasi 10s linear infinite;
+    -webkit-animation: awan-animasi 10s linear infinite;
 }
 
 @keyframes awan-animasi {
-  from {
-    background-position: 0 0;
-  }
+    from {
+        background-position: 0 0;
+    }
 
-  to {
-    background-position: 100% 0;
-  };
+    to {
+        background-position: 100% 0;
+    }
+    ;
 }
 
 @-webkit-keyframes awan-animasi {
-  from {
-    background-position: 0 0;
-  }
+    from {
+        background-position: 0 0;
+    }
 
-  to {
-    background-position: 100% 0;
-  };
+    to {
+        background-position: 100% 0;
+    }
+    ;
 }
 
 @-ms-keyframes awan-animasi {
-  from {
-    background-position: 0 0;
-  }
+    from {
+        background-position: 0 0;
+    }
 
-  to {
-    background-position: 100% 0;
-  };
+    to {
+        background-position: 100% 0;
+    }
+    ;
 }
 
 @-moz-keyframes awan-animasi {
-  from {
-    background-position: 0 0;
-  }
+    from {
+        background-position: 0 0;
+    }
 
-  to {
-    background-position: 100% 0;
-  };
+    to {
+        background-position: 100% 0;
+    }
+    ;
 }
 
 /* ------------- MEDIA Queries ------------- */
@@ -451,6 +546,19 @@ padding-bottom:10px;
         text-shadow: 2px 2px 4px black, 0 0 25px gray, 0 0 5px lightblue;
         box-shadow: 4px 4px 8px black, 0 0 50px gray, 0 0 10px lightblue;
     }
+    #icon1 {
+        display: block;
+        width: 100%;
+    }
+    #icon2 {
+        display: block;
+        width: 100%;
+    }
+
+    #icon3 {
+        display: block;
+        width: 100%;
+    }
 
 }
 
@@ -482,5 +590,22 @@ padding-bottom:10px;
     main {
         margin: 0 0 100px 0;
     }
+    img {
+        width : auto;
+        height: auto;
+    }
+        #icon1 {
+        display: inline-block;
+        width: 100%;
+        max-height: 300px;
+    }
+    #icon2 {
+        display: inline-block;
+        width: 100%;
+    }
 
+    #icon3 {
+        display: inline-block;
+        width: 100%;
+    }
 }
