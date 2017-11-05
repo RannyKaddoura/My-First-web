@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta charset="UTF-8">
     <link href="css/style.css" rel="stylesheet" type="text/css">
-
+    <link href="css/hamburgers-master/dlist/hamburgers.css" rel="stylesheet" type="text/css">
     <title>Portfolio</title>
 </head>
 
@@ -14,14 +14,33 @@
     <div class="bodycontainer">
 
         <header>
-
+            
             <div class="h1div">
                 <h1><a href="../index.html"> Ranny Kaddoura</a></h1>
                 <img src="images/icons/logo.png">
-
+        
             </div>
-
+            
         </header>
+        
+        <!-- start Animation test burger button 
+        .hamburger--elastic-r .hamburger-inner
+        .hamburger--elastic-r.is-active  --
+        
+            <button class="hamburger hamburger--elastic" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            
+            <button class="hamburger hamburger--elastic is-active" type="button">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            
+       
+         End of the Animation test burger button -->
 
         <!-- start burger menu -->
         <div id="burger-menu">
@@ -61,15 +80,40 @@
             <p>This is the first Portfolio page , actually i don not know what the Portfolio mean but you can navigate some cool pages too from the navigation up there </p>
 
         </main>
-        <br/><br/><br/><br/><br/><br/>
-        <footer>
-            <div class="footer">
-                <p>© 2017 . Kaddoura.AG</p>
-            </div>
-        </footer>
+        
+                 <!--<div class="footer">
+            <footer>
+            </footer>
+        </div>-->
+    </div>
+    <div id="awan">
+        <p>© 2017 . Kaddoura.AG</p>
     </div>
 
-<script src="js/index.js"></script>
+         <!-- 
+    <div id="anim">
+      <div class="anim box one"></div>
+      <div class="anim box two"></div>
+      <div class="anim box three"></div>
+      <div class="anim box four"></div>
+      <div class="anim box five"></div>
+    </div>
+          -->
+    
+
+    <script>
+        // Look for .hamburger
+  var hamburger = document.querySelector(".hamburger");
+  // On click
+  hamburger.addEventListener("click", function() {
+    // Toggle class "is-active"
+    hamburger.classList.toggle("is-active");
+    // Do something else, like open/close menu
+  });
+        </script> 
+        <script src="js/index.js"></script>
+
+
 </body>
 
 </html>

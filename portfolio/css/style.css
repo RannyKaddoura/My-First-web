@@ -13,7 +13,8 @@ hr {
 /* -----     html ------ */
 
 html {
-    background-image: radial-gradient(rgb(30, 44, 70) 70%, gray);
+    /*background-image: radial-gradient(rgb(30, 44, 70) 70%, gray);*/
+    background: rgb(30, 44, 70);
     color: rgba(209, 209, 224, 0.9);
     font-size: 20px;
 }
@@ -26,7 +27,7 @@ a.selected {
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
 }
 
 /* visited link */
@@ -39,15 +40,8 @@ a:visited {
 
 ul li a:hover {
     color: rgb(248, 248, 248);
-    border-radius: 8px;
-    padding: 0 4px;
-    margin: 0 4px;
-    font-weight: bold;
-    font-size: 26px;
-    text-shadow: 2px 2px 4px black, 0 0 25px gray, 0 0 5px lightblue;
-    box-shadow: 4px 4px 8px black, 0 0 50px gray, 0 0 10px lightblue;
+    text-shadow: 2px 2px 4px black, 5px 5px 25px gray, 2px 2px 5px lightblue;
 }
-
 
 /* selected link */
 
@@ -150,7 +144,6 @@ p::first-letter {
 
 main {
     display: block;
-    margin: 0 0 50px 0;
 }
 
 .fieldset {
@@ -236,8 +229,13 @@ textarea {
     background-color: #141E30;
     margin: 0;
     padding: 2px 0;
-    border-top: solid 2px;
-    border-bottom: solid 2px;
+
+}
+#awan {
+    color: rgba(209, 209, 224, 0.9);;
+    font-family: 'Indie Flower', cursive;
+    border-color: rgba(209, 209, 224, 0.9);
+
 }
 
 /* ------ bashar -----*/
@@ -272,7 +270,111 @@ p {
     margin: 0;
 }
 
+/* ---------------------  Animation box  -------------------- */
 
+#anim {
+    position: absolute;
+    width: 328px;
+    height: 328px;
+    top: calc(50% - 128px);
+    left: calc(50% - 128px);
+    z-index: -1;
+}
+
+.anim.box {
+    position: absolute;
+    border-width: 128px;
+    border-style: dashed;
+    border-radius: 70% 30% 95% 15%;
+    opacity: 0.4;
+}
+
+.anim.one {
+    border-color: #FFE13A;
+    animation: rotation 10s infinite linear;
+}
+
+.anim.two {
+    border-color: #72FF3A;
+    animation: rotation-rev 3s infinite linear;
+}
+
+.anim.three {
+    border-color: #25EDA0;
+    animation: rotation-rev 7s infinite linear;
+}
+
+.anim.four {
+    border-color: #5800BC;
+    animation: rotation 2s infinite linear;
+}
+
+.anim.five {
+    border-color: #86009B;
+    animation: rotation-rev 3s infinite linear; 
+}
+
+/* -------------------  Project cloud CSS  ------------------- */
+
+#awan {
+
+top:0px;left:0px;
+width:100%;
+height:100%;
+text-align:center;
+margin:0px;
+padding:0px;
+background-color:#C0DEED;
+background: url(../images/bgdark.png) center top repeat-x;
+padding-top:100px;
+padding-bottom:10px;
+  width: 100%;
+  height: 135px;
+  animation: awan-animasi 10s linear infinite;
+  -ms-animation: awan-animasi 10s linear infinite;
+  -moz-animation: awan-animasi 10s linear infinite;
+  -webkit-animation: awan-animasi 10s linear infinite;
+}
+
+@keyframes awan-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-webkit-keyframes awan-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-ms-keyframes awan-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
+
+@-moz-keyframes awan-animasi {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 0;
+  };
+}
 
 /* ------------- MEDIA Queries ------------- */
 
@@ -308,7 +410,7 @@ p {
     }
     nav ul {
 
-        background-color: rgb(30, 44, 70);
+        background-color: rgb(44, 65, 103);
     }
     h1 {
         font-size: 26px;
@@ -335,6 +437,19 @@ p {
     }
     #burger-nav {
         display: none;
+    }
+    main {
+        margin: 0 0 280px 0;
+    }
+    ul li a:hover {
+        color: rgb(248, 248, 248);
+        border-radius: 8px;
+        padding: 0 4px;
+        margin: 0 4px;
+        font-weight: bold;
+        font-size: 26px;
+        text-shadow: 2px 2px 4px black, 0 0 25px gray, 0 0 5px lightblue;
+        box-shadow: 4px 4px 8px black, 0 0 50px gray, 0 0 10px lightblue;
     }
 
 }
@@ -363,6 +478,9 @@ p {
     }
     #burger-menu {
         display: none;
+    }
+    main {
+        margin: 0 0 100px 0;
     }
 
 }

@@ -10,4 +10,7 @@ var burgerShowHide = function (event) {
     }
 };
 burgerButton.addEventListener('click', burgerShowHide);
+
+
+
 // End BurgerMenu script
